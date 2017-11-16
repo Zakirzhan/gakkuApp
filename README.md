@@ -1,12 +1,12 @@
 # GAKKU APP v2
 
-GAKKU APP - music of modern Kazakhstan
-The application combines all the best:
-- Gakku News: actual news of Kazakhstan's show business;
-- Gakku TV: live streaming;
-- Gakku FM: online radiostation;
-- Gakku Channel: clips on YouTube channel;
-- Gakku Chart: music Charts in Kazakhstan.# adin
+GAKKU APP - music of modern Kazakhstan<br>
+The application combines all the best:<br>
+- Gakku News: actual news of Kazakhstan's show business;<br>
+- Gakku TV: live streaming;<br>
+- Gakku FM: online radiostation;<br>
+- Gakku Channel: clips on YouTube channel;<br>
+- Gakku Chart: music Charts in Kazakhstan.# adin<br>
  
 
 <img width="30%" src="https://pp.userapi.com/c841623/v841623588/37fdc/rco9Vec7jso.jpg">
@@ -14,8 +14,7 @@ The application combines all the best:
 <img width="30%" src="https://pp.userapi.com/c841231/v841231588/36dd1/kFJpU6NBcyc.jpg"><br>
 <img width="30%" src="https://pp.userapi.com/c841231/v841231588/36de5/rFjdf_ReQPE.">
 <img width="30%" src="https://pp.userapi.com/c841231/v841231588/36ddb/2Rmjqb1qYM8.jpg">
-<img width="30%" src="https://pp.userapi.com/c841623/v841623588/37ff7/GbJ5eKWtD2M.jpg">
-jpg
+<img width="30%" src="https://pp.userapi.com/c841623/v841623588/37ff7/GbJ5eKWtD2M.jpg"><br>
 
 
 ## Setup
