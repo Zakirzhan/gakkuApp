@@ -9,12 +9,7 @@ The application combines all the best:<br>
 - Gakku Chart: music Charts in Kazakhstan.# adin<br>
  
 
-<img width="30%" src="https://pp.userapi.com/c841623/v841623588/37fdc/rco9Vec7jso.jpg">
-<img width="30%" src="https://pp.userapi.com/c841623/v841623588/37fed/1qus28FFOjM.jpg">
-<img width="30%" src="https://pp.userapi.com/c841231/v841231588/36dd1/kFJpU6NBcyc.jpg"><br>
-<img width="30%" src="https://pp.userapi.com/c841231/v841231588/36de5/rFjdf_ReQPE.">
-<img width="30%" src="https://pp.userapi.com/c841231/v841231588/36ddb/2Rmjqb1qYM8.jpg">
-<img width="30%" src="https://pp.userapi.com/c841623/v841623588/37ff7/GbJ5eKWtD2M.jpg"><br>
+<img width="100%" src="https://pp.userapi.com/c841231/v841231588/36def/K6TS0rdb_Is.jpg"><br>
 
 
 ## Setup
