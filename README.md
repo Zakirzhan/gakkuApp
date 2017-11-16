@@ -18,7 +18,7 @@ The application combines all the best:<br>
 
   ```bash
   $ git clone https://github.com/Zakirzhan/gakkuApp.git
-  $ cd ADIN
+  $ cd gakkuApp-master
   ```
 
 2. Install dependencies from [CocoaPods](http://cocoapods.org/#install)
