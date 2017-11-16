@@ -8,3 +8,6 @@ The application combines all the best:
 - Gakku Channel: clips on YouTube channel;
 - Gakku Chart: music Charts in Kazakhstan.
  
+![Снимок экрана 2017-11-16 в 5.13.11.png]({{site.baseurl}}/Снимок экрана 2017-11-16 в 5.13.11.png)
+ 
+ 
