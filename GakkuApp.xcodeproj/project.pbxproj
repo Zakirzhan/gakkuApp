@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09FB3DD5237170028BDD417E /* Pods_GakkuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D2E846CBB3670DD65EB7EB /* Pods_GakkuApp.framework */; };
+		1813E8EC1F1895C2001BE892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813E8EB1F1895C2001BE892 /* AppDelegate.swift */; };
+		1813E8EE1F1895C2001BE892 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813E8ED1F1895C2001BE892 /* NewsViewController.swift */; };
+		1813E8F41F1895C2001BE892 /* GakkuApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1813E8F21F1895C2001BE892 /* GakkuApp.xcdatamodeld */; };
+		1813E8F61F1895C2001BE892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1813E8F51F1895C2001BE892 /* Assets.xcassets */; };
+		1813E8F91F1895C2001BE892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1813E8F71F1895C2001BE892 /* LaunchScreen.storyboard */; };
+		1813E9041F1895C2001BE892 /* GakkuAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813E9031F1895C2001BE892 /* GakkuAppTests.swift */; };
+		1813E90F1F1895C2001BE892 /* GakkuAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813E90E1F1895C2001BE892 /* GakkuAppUITests.swift */; };
+		1813E9211F18C10C001BE892 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813E9201F18C10C001BE892 /* ChannelViewController.swift */; };
+		1848A2081F4384F9002D1A0D /* TVProgrammsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1848A2071F4384F9002D1A0D /* TVProgrammsCollectionViewCell.swift */; };
+		7E80FA51A73AE089A6D09A38 /* Pods_GakkuAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7555335DDDE5AADC5C7C4C7 /* Pods_GakkuAppUITests.framework */; };
+		B05E1F657F60CDB9AB07F6EE /* Pods_GakkuAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65F7AF0D8648252B52D3A15 /* Pods_GakkuAppTests.framework */; };
+		F0A275A51FBCEC0E00608103 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275A41FBCEC0E00608103 /* Constant.swift */; };
+		FA13D9C71F39151800C2BE55 /* RadioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13D9C61F39151800C2BE55 /* RadioTableViewCell.swift */; };
+		FA13D9C91F39209F00C2BE55 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13D9C81F39209F00C2BE55 /* TVViewController.swift */; };
+		FA17E7FC1F331252006E7CDA /* GakkuNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA17E7FB1F331252006E7CDA /* GakkuNews.swift */; };
+		FA17E7FE1F3319A7006E7CDA /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA17E7FD1F3319A7006E7CDA /* NewsCollectionViewCell.swift */; };
+		FA4D5DBC1F385ABD00B9C065 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA4D5DBA1F385ABD00B9C065 /* OpenSans-Bold.ttf */; };
+		FA4D5DBD1F385ABD00B9C065 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA4D5DBB1F385ABD00B9C065 /* OpenSans-Regular.ttf */; };
+		FA4D5DBF1F385B6000B9C065 /* ChartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D5DBE1F385B6000B9C065 /* ChartsTableViewCell.swift */; };
+		FA4D5DC11F38677700B9C065 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D5DC01F38677700B9C065 /* CategoriesTableViewCell.swift */; };
+		FA4D5DC31F386C7E00B9C065 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D5DC21F386C7E00B9C065 /* CategoriesTableViewController.swift */; };
+		FA4E8D831F32577F00EA242F /* YoutubeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E8D821F32577F00EA242F /* YoutubeParser.swift */; };
+		FA5022CA1F31DA7200E53219 /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5022C91F31DA7200E53219 /* RadioViewController.swift */; };
+		FA5022CC1F31DA8F00E53219 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5022CB1F31DA8F00E53219 /* AboutViewController.swift */; };
+		FA5022CF1F31DAAF00E53219 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5022CE1F31DAAF00E53219 /* ChartsViewController.swift */; };
+		FA5022D11F31E2C500E53219 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5022D01F31E2C500E53219 /* TabBarController.swift */; };
+		FAB779F41F387E330037345D /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB779F31F387E330037345D /* OpenSans-SemiBold.ttf */; };
+		FAB779FB1F3882110037345D /* NewsShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB779FA1F3882110037345D /* NewsShowViewController.swift */; };
+		FAEC000A1F3269AC0020DEAC /* YoutubeVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC00091F3269AC0020DEAC /* YoutubeVideoTableViewCell.swift */; };
+		FAEC000C1F3291820020DEAC /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC000B1F3291820020DEAC /* VideoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1813E9001F1895C2001BE892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1813E8E01F1895C2001BE892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1813E8E71F1895C2001BE892;
+			remoteInfo = GakkuApp;
+		};
+		1813E90B1F1895C2001BE892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1813E8E01F1895C2001BE892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1813E8E71F1895C2001BE892;
+			remoteInfo = GakkuApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099C8B053599BD8E963F363D /* Pods-GakkuAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GakkuAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GakkuAppUITests/Pods-GakkuAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1813E8E81F1895C2001BE892 /* GakkuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GakkuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1813E8EB1F1895C2001BE892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1813E8ED1F1895C2001BE892 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		1813E8F31F1895C2001BE892 /* GakkuApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GakkuApp.xcdatamodel; sourceTree = "<group>"; };
+		1813E8F51F1895C2001BE892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1813E8F81F1895C2001BE892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1813E8FA1F1895C2001BE892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1813E8FF1F1895C2001BE892 /* GakkuAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GakkuAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1813E9031F1895C2001BE892 /* GakkuAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GakkuAppTests.swift; sourceTree = "<group>"; };
+		1813E9051F1895C2001BE892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1813E90A1F1895C2001BE892 /* GakkuAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GakkuAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1813E90E1F1895C2001BE892 /* GakkuAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GakkuAppUITests.swift; sourceTree = "<group>"; };
+		1813E9101F1895C2001BE892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1813E9201F18C10C001BE892 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		1848A2071F4384F9002D1A0D /* TVProgrammsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVProgrammsCollectionViewCell.swift; sourceTree = "<group>"; };
+		324C396D2D4CB930C11A7894 /* Pods-GakkuAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GakkuAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GakkuAppTests/Pods-GakkuAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39D2E846CBB3670DD65EB7EB /* Pods_GakkuApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GakkuApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F49DB618A8132880F8F2F19 /* Pods-GakkuApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GakkuApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GakkuApp/Pods-GakkuApp.release.xcconfig"; sourceTree = "<group>"; };
+		A6CC6F8A7C9EE2A44D4EB430 /* Pods-GakkuApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GakkuApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GakkuApp/Pods-GakkuApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C65F7AF0D8648252B52D3A15 /* Pods_GakkuAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GakkuAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7555335DDDE5AADC5C7C4C7 /* Pods_GakkuAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GakkuAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A275A41FBCEC0E00608103 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F603904A905A0F53ADB1E164 /* Pods-GakkuAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GakkuAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GakkuAppTests/Pods-GakkuAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA13D9C61F39151800C2BE55 /* RadioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioTableViewCell.swift; sourceTree = "<group>"; };
+		FA13D9C81F39209F00C2BE55 /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
+		FA17E7FB1F331252006E7CDA /* GakkuNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GakkuNews.swift; sourceTree = "<group>"; };
+		FA17E7FD1F3319A7006E7CDA /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA4D5DBA1F385ABD00B9C065 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		FA4D5DBB1F385ABD00B9C065 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		FA4D5DBE1F385B6000B9C065 /* ChartsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsTableViewCell.swift; sourceTree = "<group>"; };
+		FA4D5DC01F38677700B9C065 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		FA4D5DC21F386C7E00B9C065 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		FA4E8D821F32577F00EA242F /* YoutubeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeParser.swift; sourceTree = "<group>"; };
+		FA5022C91F31DA7200E53219 /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
+		FA5022CB1F31DA8F00E53219 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		FA5022CE1F31DAAF00E53219 /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		FA5022D01F31E2C500E53219 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FAB779F31F387E330037345D /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAB779FA1F3882110037345D /* NewsShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsShowViewController.swift; sourceTree = "<group>"; };
+		FAEC00091F3269AC0020DEAC /* YoutubeVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideoTableViewCell.swift; sourceTree = "<group>"; };
+		FAEC000B1F3291820020DEAC /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FB92F0AABA661F94F6BA0BA2 /* Pods-GakkuAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GakkuAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GakkuAppUITests/Pods-GakkuAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1813E8E51F1895C2001BE892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FB3DD5237170028BDD417E /* Pods_GakkuApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1813E8FC1F1895C2001BE892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05E1F657F60CDB9AB07F6EE /* Pods_GakkuAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1813E9071F1895C2001BE892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E80FA51A73AE089A6D09A38 /* Pods_GakkuAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0453BBB4F7C20B18CE08B561 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6CC6F8A7C9EE2A44D4EB430 /* Pods-GakkuApp.debug.xcconfig */,
+				4F49DB618A8132880F8F2F19 /* Pods-GakkuApp.release.xcconfig */,
+				324C396D2D4CB930C11A7894 /* Pods-GakkuAppTests.debug.xcconfig */,
+				F603904A905A0F53ADB1E164 /* Pods-GakkuAppTests.release.xcconfig */,
+				FB92F0AABA661F94F6BA0BA2 /* Pods-GakkuAppUITests.debug.xcconfig */,
+				099C8B053599BD8E963F363D /* Pods-GakkuAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1813E8DF1F1895C2001BE892 = {
+			isa = PBXGroup;
+			children = (
+				1813E8EA1F1895C2001BE892 /* GakkuApp */,
+				1813E91F1F1895FC001BE892 /* Extensions */,
+				1813E9021F1895C2001BE892 /* GakkuAppTests */,
+				1813E90D1F1895C2001BE892 /* GakkuAppUITests */,
+				1813E8E91F1895C2001BE892 /* Products */,
+				0453BBB4F7C20B18CE08B561 /* Pods */,
+				EC84F5A69C71505C43B6105D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1813E8E91F1895C2001BE892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1813E8E81F1895C2001BE892 /* GakkuApp.app */,
+				1813E8FF1F1895C2001BE892 /* GakkuAppTests.xctest */,
+				1813E90A1F1895C2001BE892 /* GakkuAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1813E8EA1F1895C2001BE892 /* GakkuApp */ = {
+			isa = PBXGroup;
+			children = (
+				1813E91C1F1895E2001BE892 /* Models */,
+				1813E91E1F1895F2001BE892 /* Controllers */,
+				1813E91D1F1895EC001BE892 /* Views */,
+			);
+			path = GakkuApp;
+			sourceTree = "<group>";
+		};
+		1813E9021F1895C2001BE892 /* GakkuAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1813E9031F1895C2001BE892 /* GakkuAppTests.swift */,
+				1813E9051F1895C2001BE892 /* Info.plist */,
+			);
+			path = GakkuAppTests;
+			sourceTree = "<group>";
+		};
+		1813E90D1F1895C2001BE892 /* GakkuAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1813E90E1F1895C2001BE892 /* GakkuAppUITests.swift */,
+				1813E9101F1895C2001BE892 /* Info.plist */,
+			);
+			path = GakkuAppUITests;
+			sourceTree = "<group>";
+		};
+		1813E91C1F1895E2001BE892 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E8D821F32577F00EA242F /* YoutubeParser.swift */,
+				FA17E7FB1F331252006E7CDA /* GakkuNews.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1813E91D1F1895EC001BE892 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D5DC01F38677700B9C065 /* CategoriesTableViewCell.swift */,
+				1848A2071F4384F9002D1A0D /* TVProgrammsCollectionViewCell.swift */,
+				FAEC00091F3269AC0020DEAC /* YoutubeVideoTableViewCell.swift */,
+				FA13D9C61F39151800C2BE55 /* RadioTableViewCell.swift */,
+				FA4D5DBE1F385B6000B9C065 /* ChartsTableViewCell.swift */,
+				FA17E7FD1F3319A7006E7CDA /* NewsCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1813E91E1F1895F2001BE892 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB779F51F38819A0037345D /* News */,
+				FAB779F81F3881C70037345D /* Radio&TV */,
+				FAB779F91F3881DB0037345D /* Category & Youtube CHannel */,
+				FA5022CE1F31DAAF00E53219 /* ChartsViewController.swift */,
+				FA5022CB1F31DA8F00E53219 /* AboutViewController.swift */,
+				FA5022D01F31E2C500E53219 /* TabBarController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1813E91F1F1895FC001BE892 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1813E8EB1F1895C2001BE892 /* AppDelegate.swift */,
+				F0A275A41FBCEC0E00608103 /* Constant.swift */,
+				1848A2041F434635002D1A0D /* Fonts */,
+				1813E8FA1F1895C2001BE892 /* Info.plist */,
+				1813E8F71F1895C2001BE892 /* LaunchScreen.storyboard */,
+				1813E8F21F1895C2001BE892 /* GakkuApp.xcdatamodeld */,
+				1813E8F51F1895C2001BE892 /* Assets.xcassets */,
+			);
+			name = Extensions;
+			path = GakkuApp;
+			sourceTree = "<group>";
+		};
+		1848A2041F434635002D1A0D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAB779F31F387E330037345D /* OpenSans-SemiBold.ttf */,
+				FA4D5DBA1F385ABD00B9C065 /* OpenSans-Bold.ttf */,
+				FA4D5DBB1F385ABD00B9C065 /* OpenSans-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EC84F5A69C71505C43B6105D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39D2E846CBB3670DD65EB7EB /* Pods_GakkuApp.framework */,
+				C65F7AF0D8648252B52D3A15 /* Pods_GakkuAppTests.framework */,
+				E7555335DDDE5AADC5C7C4C7 /* Pods_GakkuAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAB779F51F38819A0037345D /* News */ = {
+			isa = PBXGroup;
+			children = (
+				1813E8ED1F1895C2001BE892 /* NewsViewController.swift */,
+				FAB779FA1F3882110037345D /* NewsShowViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		FAB779F81F3881C70037345D /* Radio&TV */ = {
+			isa = PBXGroup;
+			children = (
+				FA5022C91F31DA7200E53219 /* RadioViewController.swift */,
+				FA13D9C81F39209F00C2BE55 /* TVViewController.swift */,
+			);
+			name = "Radio&TV";
+			sourceTree = "<group>";
+		};
+		FAB779F91F3881DB0037345D /* Category & Youtube CHannel */ = {
+			isa = PBXGroup;
+			children = (
+				1813E9201F18C10C001BE892 /* ChannelViewController.swift */,
+				FA4D5DC21F386C7E00B9C065 /* CategoriesTableViewController.swift */,
+				FAEC000B1F3291820020DEAC /* VideoViewController.swift */,
+			);
+			name = "Category & Youtube CHannel";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1813E8E71F1895C2001BE892 /* GakkuApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1813E9131F1895C2001BE892 /* Build configuration list for PBXNativeTarget "GakkuApp" */;
+			buildPhases = (
+				B05713C685ECEF2EECFB33C3 /* [CP] Check Pods Manifest.lock */,
+				1813E8E41F1895C2001BE892 /* Sources */,
+				1813E8E51F1895C2001BE892 /* Frameworks */,
+				1813E8E61F1895C2001BE892 /* Resources */,
+				46CC410AF57ED25ED5F4DE42 /* [CP] Embed Pods Frameworks */,
+				4CB0ADE6389B9A7590F6BCB4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GakkuApp;
+			productName = GakkuApp;
+			productReference = 1813E8E81F1895C2001BE892 /* GakkuApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1813E8FE1F1895C2001BE892 /* GakkuAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1813E9161F1895C2001BE892 /* Build configuration list for PBXNativeTarget "GakkuAppTests" */;
+			buildPhases = (
+				075303B992FF6129CF4496BC /* [CP] Check Pods Manifest.lock */,
+				1813E8FB1F1895C2001BE892 /* Sources */,
+				1813E8FC1F1895C2001BE892 /* Frameworks */,
+				1813E8FD1F1895C2001BE892 /* Resources */,
+				6133E94EDB23304BD1F78731 /* [CP] Embed Pods Frameworks */,
+				BBB72F63E3472ABDFA818E35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1813E9011F1895C2001BE892 /* PBXTargetDependency */,
+			);
+			name = GakkuAppTests;
+			productName = GakkuAppTests;
+			productReference = 1813E8FF1F1895C2001BE892 /* GakkuAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1813E9091F1895C2001BE892 /* GakkuAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1813E9191F1895C2001BE892 /* Build configuration list for PBXNativeTarget "GakkuAppUITests" */;
+			buildPhases = (
+				7EA2FF84E8C8A07EB366A95E /* [CP] Check Pods Manifest.lock */,
+				1813E9061F1895C2001BE892 /* Sources */,
+				1813E9071F1895C2001BE892 /* Frameworks */,
+				1813E9081F1895C2001BE892 /* Resources */,
+				B0F0CF12F1ACC906D1B13742 /* [CP] Embed Pods Frameworks */,
+				52BB849FB31D826D1694EAD9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1813E90C1F1895C2001BE892 /* PBXTargetDependency */,
+			);
+			name = GakkuAppUITests;
+			productName = GakkuAppUITests;
+			productReference = 1813E90A1F1895C2001BE892 /* GakkuAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1813E8E01F1895C2001BE892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Dayana Marden";
+				TargetAttributes = {
+					1813E8E71F1895C2001BE892 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					1813E8FE1F1895C2001BE892 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1813E8E71F1895C2001BE892;
+					};
+					1813E9091F1895C2001BE892 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1813E8E71F1895C2001BE892;
+					};
+				};
+			};
+			buildConfigurationList = 1813E8E31F1895C2001BE892 /* Build configuration list for PBXProject "GakkuApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1813E8DF1F1895C2001BE892;
+			productRefGroup = 1813E8E91F1895C2001BE892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1813E8E71F1895C2001BE892 /* GakkuApp */,
+				1813E8FE1F1895C2001BE892 /* GakkuAppTests */,
+				1813E9091F1895C2001BE892 /* GakkuAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1813E8E61F1895C2001BE892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1813E8F91F1895C2001BE892 /* LaunchScreen.storyboard in Resources */,
+				1813E8F61F1895C2001BE892 /* Assets.xcassets in Resources */,
+				FAB779F41F387E330037345D /* OpenSans-SemiBold.ttf in Resources */,
+				FA4D5DBD1F385ABD00B9C065 /* OpenSans-Regular.ttf in Resources */,
+				FA4D5DBC1F385ABD00B9C065 /* OpenSans-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1813E8FD1F1895C2001BE892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1813E9081F1895C2001BE892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		075303B992FF6129CF4496BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GakkuAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46CC410AF57ED25ED5F4DE42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GakkuApp/Pods-GakkuApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Sugar/Sugar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sugar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GakkuApp/Pods-GakkuApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CB0ADE6389B9A7590F6BCB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GakkuApp/Pods-GakkuApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52BB849FB31D826D1694EAD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GakkuAppUITests/Pods-GakkuAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6133E94EDB23304BD1F78731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GakkuAppTests/Pods-GakkuAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA2FF84E8C8A07EB366A95E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GakkuAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05713C685ECEF2EECFB33C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GakkuApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F0CF12F1ACC906D1B13742 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GakkuAppUITests/Pods-GakkuAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB72F63E3472ABDFA818E35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GakkuAppTests/Pods-GakkuAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1813E8E41F1895C2001BE892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5022CC1F31DA8F00E53219 /* AboutViewController.swift in Sources */,
+				FA5022D11F31E2C500E53219 /* TabBarController.swift in Sources */,
+				FA5022CF1F31DAAF00E53219 /* ChartsViewController.swift in Sources */,
+				FA4D5DC31F386C7E00B9C065 /* CategoriesTableViewController.swift in Sources */,
+				FA17E7FE1F3319A7006E7CDA /* NewsCollectionViewCell.swift in Sources */,
+				1813E8EE1F1895C2001BE892 /* NewsViewController.swift in Sources */,
+				FA5022CA1F31DA7200E53219 /* RadioViewController.swift in Sources */,
+				1813E8EC1F1895C2001BE892 /* AppDelegate.swift in Sources */,
+				FAEC000C1F3291820020DEAC /* VideoViewController.swift in Sources */,
+				FA13D9C71F39151800C2BE55 /* RadioTableViewCell.swift in Sources */,
+				1813E9211F18C10C001BE892 /* ChannelViewController.swift in Sources */,
+				1848A2081F4384F9002D1A0D /* TVProgrammsCollectionViewCell.swift in Sources */,
+				FAEC000A1F3269AC0020DEAC /* YoutubeVideoTableViewCell.swift in Sources */,
+				FA13D9C91F39209F00C2BE55 /* TVViewController.swift in Sources */,
+				F0A275A51FBCEC0E00608103 /* Constant.swift in Sources */,
+				1813E8F41F1895C2001BE892 /* GakkuApp.xcdatamodeld in Sources */,
+				FA17E7FC1F331252006E7CDA /* GakkuNews.swift in Sources */,
+				FAB779FB1F3882110037345D /* NewsShowViewController.swift in Sources */,
+				FA4D5DBF1F385B6000B9C065 /* ChartsTableViewCell.swift in Sources */,
+				FA4E8D831F32577F00EA242F /* YoutubeParser.swift in Sources */,
+				FA4D5DC11F38677700B9C065 /* CategoriesTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1813E8FB1F1895C2001BE892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1813E9041F1895C2001BE892 /* GakkuAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1813E9061F1895C2001BE892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1813E90F1F1895C2001BE892 /* GakkuAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1813E9011F1895C2001BE892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1813E8E71F1895C2001BE892 /* GakkuApp */;
+			targetProxy = 1813E9001F1895C2001BE892 /* PBXContainerItemProxy */;
+		};
+		1813E90C1F1895C2001BE892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1813E8E71F1895C2001BE892 /* GakkuApp */;
+			targetProxy = 1813E90B1F1895C2001BE892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1813E8F71F1895C2001BE892 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1813E8F81F1895C2001BE892 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1813E9111F1895C2001BE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1813E9121F1895C2001BE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1813E9141F1895C2001BE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CC6F8A7C9EE2A44D4EB430 /* Pods-GakkuApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GakkuApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kg.com.gakkuapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1813E9151F1895C2001BE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F49DB618A8132880F8F2F19 /* Pods-GakkuApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GakkuApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kg.com.gakkuapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1813E9171F1895C2001BE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324C396D2D4CB930C11A7894 /* Pods-GakkuAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GakkuAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-50107085.GakkuAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GakkuApp.app/GakkuApp";
+			};
+			name = Debug;
+		};
+		1813E9181F1895C2001BE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F603904A905A0F53ADB1E164 /* Pods-GakkuAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GakkuAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-50107085.GakkuAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GakkuApp.app/GakkuApp";
+			};
+			name = Release;
+		};
+		1813E91A1F1895C2001BE892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB92F0AABA661F94F6BA0BA2 /* Pods-GakkuAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GakkuAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-50107085.GakkuAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GakkuApp;
+			};
+			name = Debug;
+		};
+		1813E91B1F1895C2001BE892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 099C8B053599BD8E963F363D /* Pods-GakkuAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GakkuAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-50107085.GakkuAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GakkuApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1813E8E31F1895C2001BE892 /* Build configuration list for PBXProject "GakkuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1813E9111F1895C2001BE892 /* Debug */,
+				1813E9121F1895C2001BE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1813E9131F1895C2001BE892 /* Build configuration list for PBXNativeTarget "GakkuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1813E9141F1895C2001BE892 /* Debug */,
+				1813E9151F1895C2001BE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1813E9161F1895C2001BE892 /* Build configuration list for PBXNativeTarget "GakkuAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1813E9171F1895C2001BE892 /* Debug */,
+				1813E9181F1895C2001BE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1813E9191F1895C2001BE892 /* Build configuration list for PBXNativeTarget "GakkuAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1813E91A1F1895C2001BE892 /* Debug */,
+				1813E91B1F1895C2001BE892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1813E8F21F1895C2001BE892 /* GakkuApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1813E8F31F1895C2001BE892 /* GakkuApp.xcdatamodel */,
+			);
+			currentVersion = 1813E8F31F1895C2001BE892 /* GakkuApp.xcdatamodel */;
+			path = GakkuApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1813E8E01F1895C2001BE892 /* Project object */;
+}
